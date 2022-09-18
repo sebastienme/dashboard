@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+ :root {
+   --main-color: #d72323;
+   --background-col: #3e3636; 
+   --text-color: #f5eded;
+   --main-font: 'Roboto', sans-serif;
+ }
+
+ * {
+    box-sizing: border-box;
+    margin: 0;
+ }
+ 
+ body {
+    background-color: var(--background-col);
+    color: var(--text-color);
+    height: 100vh;
+    font-family: var(--main-font);
+ }
+
+ .material-symbols-outlined.icon {
+    font-size: 2.5rem;
+ }
+ 
+ .material-symbols-outlined {
+    text-align: center;
+    align-self: center;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+ .container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 100vh;
+ }
+
+ .left {
+    background-color: var(--main-color);
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+ }
+
+ .header-left {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+ }
+
+ .dashboard {
+    font-size: 1.7rem;
+    font-weight: 700;
+    align-self: center;
+ }
+
+ .bottom-menu {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(11, 2rem);
+    grid-auto-flow: row;
+    gap: 10px;
+ }
+
+.menu-text {
+    font-weight: 600;
+    align-self: center;
+    font-size: 1.3rem;
+}
+
+.config {
+    grid-row: 9 / 10;
+}
+
+.support {
+    grid-row: 10 / 11;
+}
+
+.verify {
+    grid-row: 11 / 12;
+}
+
+header {
+    background-color: black;
+    min-height: 175px;
+    padding: 20px;
+    font-weight: 700;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.search-div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header input[type=text] {
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    min-height: 25px;
+    padding-left: 10px;
+}
+
+.header-top-items {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.grant {
+    align-self: center;
+}
+
+.img-grant {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.header-top-grant {
+    font-size: 1.3rem;
+    align-self: center;
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+ @media only screen and (max-width: 980px) {
+
+    .container {
+        grid-template-columns: 1fr 5fr;
+    }
+ }
